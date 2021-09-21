@@ -9,6 +9,7 @@
 	    <groupId>junit</groupId>
 	    <artifactId>junit</artifactId>
 	    <version>4.12</version>
+	  
 	</dependency>
 	<dependency>
 	    <groupId>org.mockito</groupId>
@@ -28,13 +29,20 @@
   		<plugin>
   		<groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.8.0</version>
         <configuration>
           <!-- or whatever version you use -->
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
   		</plugin>
+  		
+  		  <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.3.0.603</version>
+      </plugin>
+ 
   	
   	</plugins>
   	
